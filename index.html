@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon de Emmy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__shoplogo01"><a href="index.html"><img src="03_illustrator/logo/logo_ol_01.png"
+                    alt="Salon de Emmy"></a></div>
+        <input type="checkbox" id="header-navigation-input">
+        <label for="header-navigation-input" id="header-navigation-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div id="header-navigation">
+            <div class="header__shoplogo02"><img src="03_illustrator/logo/logo_ol_02.png" alt="Salon de Emmy"></div>
+            <ul class="navigation__list">
+                <li class="navigation__list-item"><a href="#" class="navigation__link">選ばれる理由</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__link">メニュー</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__link">お客様の声</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__link">店舗一覧</a></li>
+                <li class="navigation__list-item"><a href="#" class="navigation__link">お問い合わせ</a></li>
+            </ul>
+            <aside class="header__snsLogo">
+                <ul>
+                    <li class="header__logoX"><a href="#"><img src="03_illustrator/logo_SNS/X_logo.png"
+                                alt="X logo"></a></li>
+                    <li class="header__logoInstagram"><a href="#"><img
+                                src="03_illustrator/logo_SNS/Instagram_Glyph_Black.png" alt="Instagram logo"></a></li>
+                </ul>
+            </aside>
+        </div>
+    </header>
+    <!--カルーセル-->
+    <div class="carousel">
+        <div class="carousel-area">
+            <div class="carousel-item"><img src="01_images/AdobeStoke/AdobeStock_332631006_Preview.jpeg" alt="写真1">
+            </div>
+            <div class="carousel-item"><img src="01_images/AdobeStoke/AdobeStock_372375335_Preview.jpeg" alt="写真2">
+            </div>
+            <div class="carousel-item"><img src="01_images/AdobeStoke/AdobeStock_258910893_Preview.jpeg" alt="写真3">
+            </div>
+        </div>
+        <!--ナビゲーションボタン-->
+        <div class="carousel-nav">
+            <button class="prev" onclick="prevSlide()"></button>
+            <button class="next" onclick="nextSlide()"></button>
+        </div>
+        <!--ページネーション-->
+        <div class="pagination">
+            <button class="active" onclick="goToPage(1)"></button>
+            <button onclick="goToPage(2)"></button>
+            <button onclick="goToPage(3)"></button>
+        </div>
+    </div>
+    <!--メイン-->
+    <main class="site-main">
+        <div class="container">
+            <h1 class="catchphrase">あなたの「なりたい」が叶う</h1>
+            <div class="sentence1">
+                <p class="new-line">「確かな技術」と「安心」をモットーに<wbr/>丁寧なカウンセリングと細やかなケアで<wbr/>自分らしく、自信に満ちた結婚式を。</p>
+            </div>
+        </div>
+        <div>
+            <h2 class="menu">メニュー</h2>
+            <section>
+                <h3>menu</h3>
+            </section>
+            <div class="sentence2">
+                <p class="new-line">先輩花嫁の声が反映された様々なプラン。<wbr/>エステ初心者を含めた花嫁を知り抜く<wbr/>スタッフがあなたの理想に結果で<wbr/>お応えいたします。</p>
+            </div>
+            <div class="menu-button">
+                <div class="menu-button1">
+                    <a href="trial_menu.html">
+                        <img class="menu-name-img" src="02_photoshop/menu-name1.png" alt="">
+                        <p class="menu-name1">お試しメニュー</p>
+                        <img class="menu-button-triangle" src="01_images/triangle.png" alt="">
+                    </a>
+                </div>
+                <div class="menu-button1">
+                    <img class="menu-name-img" src="02_photoshop/menu-name2.png" alt="">
+                    <p class="menu-name2">ブライダルエステメニュー</p>
+                    <img class="menu-button-triangle" src="01_images/triangle.png" alt="">
+                </div>
+            </div>
+            <div class="sentence2">
+                <div class="caution">
+                    <div class="caution__background">
+                        <div class="paragraph">
+                            <p>また、様々な事情をお持ちの方向けの<br>別途メニューもございます。</p>
+                        </div>
+                        <div class="paragraph">
+                            <p>価格を抑えたい方<br>妊娠をしているため、配慮して欲しい方<br>じっくりと挙式に向けて時間をかけたい方<br>挙式まで時間がない方<br></p>
+                        </div>
+                        <div class="paragraph">
+                            <p>ご相談は下記より承っております。</p>
+                        </div>
+                        <div class="menu__contact"><a href="#">LINEからのお問い合わせはこちら</a></div>
+                    </div>
+                </div>
+            </div>
+            <h2>お客様の声</h2>
+            <section>
+                <h3>voice</h3>
+            </section>
+            <div class="voice">
+                <div class="voice__MI">
+                    <div class="voice__block">
+                        <picture class="voice__aicon"><img
+                                src="03_illustrator/aicon/AdobeStock_467946590_Preview_01-01.png" alt="顔アイコンショート１">
+                        </picture>
+                        <p class="name__date">M.I.&nbsp;様<br>&lbrack;挙式日&rbrack;2023/09/10</p>
+                    </div>
+                    <div class="sentence">
+                        <p class="use__plan">ご利用プラン</p>
+                        <p class="use__plan2">プレミアム2DAYSプラン</p>
+                        <div class="sentence3">
+                            <p>他のブライダルサロンと比較し、プラン内容が魅力的でした。価格も良心的だったこと、お店の雰囲気がぴったりだったので選びました。<br>&emsp;文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="voice__KH">
+                    <div class="voice__block">
+                        <picture class="voice__aicon"><img
+                                src="03_illustrator/aicon/AdobeStock_467946590_Preview_01-02.png" alt="顔アイコンロング１">
+                        </picture>
+                        <p class="name__date">K.H.&nbsp;様<br>&lbrack;挙式日&rbrack;2023/07/30</p>
+                    </div>
+                    <div class="sentence">
+                        <p class="use__plan">ご利用プラン</p>
+                        <p class="use__plan3">シェービングエステプラン</p>
+                        <p class="use__plan2">センシティブプラン</p>
+                        <div class="sentence3">
+                            <p>ブライダルサロン選びにとても迷っていましたが、そんな不安を解消するためにスタッフの皆さんには寄り添っていただけました。…<br>&emsp;文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="voice__MM">
+                    <div class="voice__block">
+                        <picture class="voice__aicon"><img
+                                src="03_illustrator/aicon/AdobeStock_467946590_Preview_01-01.png" alt="顔アイコンショート２">
+                        </picture>
+                        <p class="name__date">M.M.&nbsp;様<br>&lbrack;挙式日&rbrack;2023/07/02</p>
+                    </div>
+                    <div class="sentence">
+                        <p class="use__plan">ご利用プラン</p>
+                        <p class="use__plan2">プレミアム2DAYSプラン</p>
+                        <div class="sentence3">
+                            <p>無理な勧誘がなく、ブライダルエステのお試しメニューのときに非常に印象が良かったです。…<br>&emsp;文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="voice__IY">
+                    <div class="voice__block">
+                        <picture class="voice__aicon"><img
+                                src="03_illustrator/aicon/AdobeStock_467946590_Preview_01-02.png" alt="顔アイコンロング２">
+                        </picture>
+                        <p class="name__date">I.Y.&nbsp;様<br>&lbrack;挙式日&rbrack;2023/07/02</p>
+                    </div>
+                    <div class="sentence">
+                        <p class="use__plan">ご利用プラン</p>
+                        <p class="use__plan2">センシティブプラン</p>
+                        <div class="sentence3">
+                            <p>敏感肌なためサロンへ行くと肌荒れが酷くなることもありましたが、Salon de Emmyではしっかりとお話を聞いてくださって私に合う処置をしていただき満足しました。…<br>&emsp;文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="voice__list"><a href="#">お客様の声一覧</a></div>
+        </div>
+        <h2>店舗一覧</h2>
+        <section>
+            <h3>shop</h3>
+        </section>
+        <div class="shop-list">
+            <div class="shop-button1">
+                <img class="shop-name-img" src="02_photoshop/shop-name1.png" alt="">
+                <p class="shop-name1">新宿本店</p><img class="shop-button-triangle" src="01_images/triangle.png" alt="">
+            </div>
+            <div class="shop-button2">
+                <img class="shop-name-img" src="02_photoshop/shop-name2.png" alt="">
+                <p class="shop-name1">六本木店</p><img class="shop-button-triangle" src="01_images/triangle.png" alt="">
+            </div>
+        </div>
+        <ul class="fixed__button" id="#js-button-reserved">
+            <li><a href="https://www.youtube.com/channel/UCodqGjnhTxs9SwfUWhLvi4w">
+                    <div class="reserved">ご予約</div>
+                </a></li>
+            <li><a href="https://www.youtube.com/channel/UCodqGjnhTxs9SwfUWhLvi4w">
+                    <div class="contact">お問い合わせ</div>
+                </a></li>
+        </ul>
+    </main>
+    <footer>
+        <div id="footer_widget">
+            <div class="footer_inner">
+                <div class="footer_companyOverview">会社概要</div>
+                <div class="footer_sitemap">サイトマップ</div>
+                <div class="footer_recruit">採用情報</div>
+                <div class="footer_privacyPolicy">プライバシーポリシー</div>
+                <div class="footer_law">特定商取引法</div>
+            </div>
+        </div>
+        <div id="footer_top"><img class="footer_logo" src="03_illustrator/logo/logo_ol_02.png" alt="Salon de Emmy">
+            <address>
+                <div class="footer_address">〒160-0000<br>東京都新宿区西新宿□-□-□&nbsp;◯◯◯◯◯◯ビル「3F」</div>
+                <div class="footer_tel">03-1111-1111</div>
+            </address>
+            <aside class="footer__snsLogo">
+                <ul>
+                    <li class="footer__logoX"><img src="03_illustrator/logo_SNS/X_logo.png" alt="X logo"><a
+                            href="#"></a></li>
+                    <li class="footer__logoInstagram"><a href="#"><img
+                                src="03_illustrator/logo_SNS/Instagram_Glyph_Black.png" alt="Instagram logo"></a></li>
+                </ul>
+            </aside>
+            <small>&copy;2023&nbsp;Salon&nbsp;de&nbsp;Emmy(bridal&nbsp;beauty&nbsp;salon).&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
+        </div>
+    </footer>
+    <button id="js-button-top" class="pagetop"><span class="pagetop__arrow"></span></button>
+    <script>
+        let currentIndex = 0;
+        const totalItems = document.querySelectorAll('.carousel-item').length;
+        const itemsPerPage = 1;
+        let intervalId;
+
+        function showSlide(index) {
+            const carouselArea = document.querySelector('.carousel-area');
+            const itemWidth = document.querySelector('.carousel-item').offsetWidth;
+            const newPosition = -index * itemWidth;
+            carouselArea.style.transform = `translateX(${newPosition}px)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            showSlide(currentIndex);
+            resetInterval();
+            updatePagination
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            showSlide(currentIndex);
+            resetInterval();
+            updatePagination();
+        }
+        function goToPage(page) {
+            currentIndex = (page - 1) * itemsPerPage;
+            showSlide(currentIndex);
+            resetInterval();
+            updatePagination();
+        }
+        function resetInterval() {
+            clearInterval(intervalId);
+            startInterval();
+        }
+        function startInterval() {
+            intervalId = setInterval(nextSlide, 5000);
+        }
+        function updatePagination() {
+            const buttons = document.querySelectorAll('.pagination button');
+            buttons.forEach((button, index) => {
+                if (index * itemsPerPage === currentIndex) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+        }
+        // 初回の自動切り替え
+        startInterval();
+    </script>
+
+</body>
+
+</html>
